@@ -8,6 +8,6 @@ import ru.maxima.model.Person;
 
 @Repository
 public interface PeopleRepository extends JpaRepository<Person, Integer> {
-    @Query("SELECT p.fullName FROM Person p JOIN p.books b WHERE b.id = :bookId")
+    @Query("SELECT p.fullName FROM Person p JOIN Book b WHERE b.id = :bookId")
     String findPersonFullNameByBookId(@Param("bookId") Integer bookId);
 }
