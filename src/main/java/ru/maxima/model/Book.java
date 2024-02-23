@@ -25,7 +25,8 @@ public class Book {
     private int yearOfWritingBook;
 
     @Column(name = "person_id")
-    private int personId;
+//    @JoinColumn(name = "person_id", referencedColumnName = "id")
+    private Integer personId;
 
     public Book() {
     }

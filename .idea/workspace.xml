@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6353f2b-d0e0-4e27-aa84-2235ed8ac39e" name="Changes" comment="init origin">
+    <list default="true" id="b6353f2b-d0e0-4e27-aa84-2235ed8ac39e" name="Changes" comment="init origin2">
       <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708683448181</updated>
       <workItem from="1708683449215" duration="1605000" />
-      <workItem from="1708696554375" duration="3380000" />
+      <workItem from="1708696554375" duration="4385000" />
     </task>
     <task id="LOCAL-00001" summary="init origin">
       <created>1708698985056</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708698985056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init origin2">
+      <created>1708700070372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708700070372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init origin" />
-    <option name="LAST_COMMIT_MESSAGE" value="init origin" />
+    <MESSAGE value="init origin2" />
+    <option name="LAST_COMMIT_MESSAGE" value="init origin2" />
   </component>
 </project>
