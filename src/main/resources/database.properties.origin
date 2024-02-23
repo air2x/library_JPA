@@ -1,0 +1,7 @@
+driverPSQL=
+urlPSQL=
+usernamePSQL=
+passwordPSQL=
+
+hibernate.show_sql=
+hibernate.dialect=
