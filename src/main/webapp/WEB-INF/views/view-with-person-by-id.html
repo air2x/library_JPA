@@ -21,9 +21,9 @@
 </form>
 
 <hr/>
-<div th:if="${books.size()!=0}">
+<div th:if="${person?.getBooks()?.size()!=0}">
     <a>Книги на руках:</a>
-    <div th:each="book : ${books}">
+    <div th:each="book : ${person?.getBooks()}">
         <a th:href="@{/books/{id}(id=${book.getId()})}"
            th:text="${book.getNameOfBook()}"></a>
         <a>, </a>
@@ -34,7 +34,7 @@
            th:text="${book.getYearOfWritingBook()}"></a>
     </div>
 </div>
-<div style="color: green" th:if="${books.size()==0}">
+<div style="color: green" th:if="${person?.getBooks()?.size()==0}">
     <a>Этот человек еще не брал книг</a>
 </div>
 </body>

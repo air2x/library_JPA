@@ -10,9 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6353f2b-d0e0-4e27-aa84-2235ed8ac39e" name="Changes" comment="init origin2">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/controllers/BooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/model/BookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/model/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/BooksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/BooksRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/services/BooksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/services/BooksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view-with-book-by-id.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view-with-book-by-id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view-with-person-by-id.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view-with-person-by-id.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +58,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/java/MyTest/Alishev/HibernateApp",
+    "last_opened_file_path": "C:/java/init_origin2.patch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -164,7 +181,9 @@
       <option name="presentableId" value="Default" />
       <updated>1708683448181</updated>
       <workItem from="1708683449215" duration="1605000" />
-      <workItem from="1708696554375" duration="4385000" />
+      <workItem from="1708696554375" duration="6113000" />
+      <workItem from="1708847031934" duration="1699000" />
+      <workItem from="1708860740155" duration="5598000" />
     </task>
     <task id="LOCAL-00001" summary="init origin">
       <created>1708698985056</created>
@@ -180,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708700070372</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init origin2">
+      <created>1708701044927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708701044927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

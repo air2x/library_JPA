@@ -15,9 +15,9 @@
 <a th:text="${book.getYearOfWritingBook()}">Value</a>
 <br/>
 <br/>
-<form style="color: green" th:if="${book.getPersonId()==0}" th:method="PATCH"
+<form style="color: green" th:if="${book.getOwner()==null}" th:method="PATCH"
       th:action="@{/books/{id}/assign(id=${book.getId()})}">
-    <div style="color: green" th:if="${book.getPersonId()==0}">
+    <div style="color: green" th:if="${book.getOwner()==null}">
         <div> Книга свободна</div>
         <label for="person">Выберите кому назначить книгу:</label>
         <select th:object="${person}" th:field="*{id}" id="person">
@@ -27,10 +27,10 @@
         </select>
     </div>
 </form>
-<form th:if="${book.getPersonId()!=0}" th:method="PATCH" th:action="@{/books/{id}/freeTheBook(id=${book.getId()})}">
-    <div th:if="${book.getPersonId()!=0}">
+<form th:if="${book.getOwner()!=null}" th:method="PATCH" th:action="@{/books/{id}/freeTheBook(id=${book.getId()})}">
+    <div th:if="${book.getOwner().getId()!=0}">
         <div>Книга занята, находится у:</div>
-        <a th:text="${whoHasTheBook}"></a>
+        <a th:text="${book.getOwner().getFullName()}"></a>
     </div>
     <a th:href="@{/books/{id}/freeTheBook(id=${book.getId()})}">
         <input type="submit" value="Освободить книгу">

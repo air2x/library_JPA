@@ -52,20 +52,22 @@ public class BooksService {
         booksRepository.deleteById(id);
     }
 
-    public String getWhoHasTheBook(int bookId) {
-        return peopleRepository.findPersonFullNameByBookId(bookId);
-    }
-
+    @Transactional
     public void assignABook(int bookId, Person person) {
         Book book = booksRepository.findById(bookId)
                 .orElseThrow(() -> new IllegalArgumentException("Book not found with id: " + bookId));
-        book.setPersonId(person.getId());
+        if (peopleRepository.findById(person.getId()).isEmpty()) {
+            peopleRepository.save(person);
+        }
+        book.setOwner(person);
         booksRepository.save(book);
     }
 
+    @Transactional
     public void freeTheBook(int bookId) {
-        Book book = booksRepository.findById(bookId).orElseThrow(() -> new IllegalArgumentException("Book not found with id: " + bookId));
-        book.setPersonId(0);
+        Book book = booksRepository.findById(bookId)
+                .orElseThrow(() -> new IllegalArgumentException("Book not found with id: " + bookId));
+        book.setOwner(null);
         booksRepository.save(book);
     }
 }

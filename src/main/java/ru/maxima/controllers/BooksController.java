@@ -31,10 +31,9 @@ public class BooksController {
     }
 
     @PatchMapping("/{id}/assign")
-    public String assignABook(@PathVariable("id") int id, Model model,
+    public String assignABook(@PathVariable("id") int id,
                               @ModelAttribute("person") Person person) {
         booksService.assignABook(id, person);
-
         return "redirect:/books";
     }
 
@@ -43,7 +42,6 @@ public class BooksController {
                            @ModelAttribute("person") Person person) {
         model.addAttribute("book", booksService.findOneBook(id));
         model.addAttribute("people", peopleService.findAllPeople());
-        model.addAttribute("whoHasTheBook", booksService.getWhoHasTheBook(id));
         return "view-with-book-by-id";
     }
 

@@ -27,6 +27,4 @@ public class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationC
         return new Filter[]{
                 new HiddenHttpMethodFilter(), new CharacterEncodingFilter()};
     }
-
-
 }

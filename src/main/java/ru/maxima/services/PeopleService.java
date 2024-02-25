@@ -3,9 +3,7 @@ package ru.maxima.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.maxima.model.Book;
 import ru.maxima.model.Person;
-import ru.maxima.repositories.BooksRepository;
 import ru.maxima.repositories.PeopleRepository;
 
 import java.util.List;
@@ -16,12 +14,10 @@ import java.util.Optional;
 public class PeopleService {
 
     private final PeopleRepository peopleRepository;
-    private final BooksRepository booksRepository;
 
     @Autowired
-    public PeopleService(PeopleRepository peopleRepository, BooksRepository booksRepository) {
+    public PeopleService(PeopleRepository peopleRepository) {
         this.peopleRepository = peopleRepository;
-        this.booksRepository = booksRepository;
     }
 
     public List<Person> findAllPeople() {
@@ -50,9 +46,4 @@ public class PeopleService {
     public void deletePerson(int id) {
         peopleRepository.deleteById(id);
     }
-
-    public List<Book> showBooksOnTheHands(int personId) {
-        return booksRepository.findBooksByPersonId(personId);
-    }
-
 }

@@ -86,22 +86,6 @@ public class SpringConfig implements WebMvcConfigurer {
         return new JdbcTemplate(dataSource());
     }
 
-//    @Bean
-//    public LocalSessionFactoryBean sessionFactory() {
-//        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-//        sessionFactoryBean.setDataSource(dataSource());
-//        sessionFactoryBean.setPackagesToScan("ru.maxima");
-//        sessionFactoryBean.setHibernateProperties(hibernateProperties());
-//        return sessionFactoryBean;
-//    }
-
-
-//    @Bean
-//    public PlatformTransactionManager hibernateTransactionManager() {
-//        HibernateTransactionManager platformTransactionManager = new HibernateTransactionManager();
-//        platformTransactionManager.setSessionFactory(sessionFactory().getObject());
-//        return platformTransactionManager;
-//    }
     private Properties hibernateProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", environment.getProperty("hibernate.dialect"));
@@ -110,7 +94,7 @@ public class SpringConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
         em.setPackagesToScan("ru.maxima.model");
